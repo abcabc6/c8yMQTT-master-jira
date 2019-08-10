@@ -1,0 +1,279 @@
+Successfully initialized.
+Log: Sending CONNECT (u1, p1, wr0, wq0, wf0, c1, k60) client_id=b'mytest123a'
+Log: Sending SUBSCRIBE (d0, m1) [(b's/ds', 2)]
+Log: Received CONNACK (0, 0)
+Subscribing to topic: s/ds
+connect: 0
+Log: Sending SUBSCRIBE (d0, m2) [(b's/dc/pi', 2)]
+Subscribing to topic: s/dc/pi
+!!Connected!!
+Log: Sending SUBSCRIBE (d0, m3) [(b's/e', 2)]
+Subscribing to topic: s/e
+Log: Received SUBACK
+Subscribed: 1 (2,)
+Log: Received SUBACK
+Subscribed: 2 (2,)
+Log: Received SUBACK
+Subscribed: 3 (2,)
+Connected and subscribed successfully.
+Log: Sending PUBLISH (d0, q2, r0, m4), 'b's/us'', ... (86 bytes)
+Sending Config String:113,"[device]
+host = paulxutenant.cumulocity.com
+port = 1883
+tls = true
+cacert = /etc/ssl/certs/ca-certificates.crt
+operations = c8y_Restart,c8y_Message,c8y_Configuration,c8y_SendConfiguration,c8y_LogfileRequest
+subscribe = s/ds,s/dc/pi,s/e
+devicetype = c8y_LinuxPC
+sendinterval = 5
+requiredinterval = 2
+loglevel = DEBUG
+reboot = 0
+config_update = 0
+bootstrap_pwd = xxxxx
+service_tag = 
+
+"
+Log: Sending PUBLISH (d0, q2, r0, m5), 'b's/us'', ... (389 bytes)
+Log: Received PUBREC (Mid: 4)
+Log: Sending PUBREL (Mid: 4)
+Log: Received PUBREC (Mid: 5)
+Log: Sending PUBREL (Mid: 5)
+Log: Received PUBCOMP (Mid: 4)
+publish: 4
+Log: Received PUBCOMP (Mid: 5)
+publish: 5
+Sending Temperature  measurement: 211,25.015625
+Log: Sending PUBLISH (d0, q2, r0, m6), 'b's/us'', ... (13 bytes)
+Sending Humidity  measurement: 992,,44.8203125
+Log: Sending PUBLISH (d0, q2, r0, m7), 'b's/uc/pi'', ... (15 bytes)
+Sending Pressure  measurement: 994,,1013.007080078125
+Log: Sending PUBLISH (d0, q2, r0, m8), 'b's/uc/pi'', ... (22 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m9), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 6)
+Log: Sending PUBREL (Mid: 6)
+Log: Received PUBREC (Mid: 7)
+Log: Sending PUBREL (Mid: 7)
+Log: Received PUBREC (Mid: 8)
+Log: Sending PUBREL (Mid: 8)
+Log: Received PUBREC (Mid: 9)
+Log: Sending PUBREL (Mid: 9)
+Log: Received PUBCOMP (Mid: 6)
+publish: 6
+Log: Received PUBLISH (d0, q2, r0, m1), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 1)
+Log: Received PUBCOMP (Mid: 7)
+publish: 7
+Log: Received PUBLISH (d0, q2, r0, m2), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 2)
+Log: Received PUBCOMP (Mid: 8)
+publish: 8
+Log: Received PUBLISH (d0, q2, r0, m3), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 3)
+Log: Received PUBCOMP (Mid: 9)
+publish: 9
+Log: Received PUBREL (Mid: 1)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 1)
+Log: Received PUBREL (Mid: 2)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 2)
+Log: Received PUBREL (Mid: 3)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 3)
+Sending Temperature  measurement: 211,25.015625
+Log: Sending PUBLISH (d0, q2, r0, m10), 'b's/us'', ... (13 bytes)
+Sending Humidity  measurement: 992,,44.94140625
+Log: Sending PUBLISH (d0, q2, r0, m11), 'b's/uc/pi'', ... (16 bytes)
+Sending Pressure  measurement: 994,,1013.00537109375
+Log: Sending PUBLISH (d0, q2, r0, m12), 'b's/uc/pi'', ... (21 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m13), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 10)
+Log: Sending PUBREL (Mid: 10)
+Log: Received PUBREC (Mid: 11)
+Log: Sending PUBREL (Mid: 11)
+Log: Received PUBREC (Mid: 12)
+Log: Sending PUBREL (Mid: 12)
+Log: Received PUBREC (Mid: 13)
+Log: Sending PUBREL (Mid: 13)
+Log: Received PUBCOMP (Mid: 10)
+publish: 10
+Log: Received PUBLISH (d0, q2, r0, m4), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 4)
+Log: Received PUBCOMP (Mid: 11)
+publish: 11
+Log: Received PUBLISH (d0, q2, r0, m5), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 5)
+Log: Received PUBCOMP (Mid: 12)
+publish: 12
+Log: Received PUBLISH (d0, q2, r0, m6), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 6)
+Log: Received PUBCOMP (Mid: 13)
+publish: 13
+Log: Received PUBREL (Mid: 4)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 4)
+Log: Received PUBREL (Mid: 5)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 5)
+Log: Received PUBREL (Mid: 6)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 6)
+Sending Temperature  measurement: 211,25.0
+Log: Sending PUBLISH (d0, q2, r0, m14), 'b's/us'', ... (8 bytes)
+Sending Humidity  measurement: 992,,45.2265625
+Log: Sending PUBLISH (d0, q2, r0, m15), 'b's/uc/pi'', ... (15 bytes)
+Sending Pressure  measurement: 994,,1012.99755859375
+Log: Sending PUBLISH (d0, q2, r0, m16), 'b's/uc/pi'', ... (21 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m17), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 14)
+Log: Sending PUBREL (Mid: 14)
+Log: Received PUBREC (Mid: 15)
+Log: Sending PUBREL (Mid: 15)
+Log: Received PUBREC (Mid: 16)
+Log: Sending PUBREL (Mid: 16)
+Log: Received PUBREC (Mid: 17)
+Log: Sending PUBREL (Mid: 17)
+Log: Received PUBCOMP (Mid: 14)
+publish: 14
+Log: Received PUBLISH (d0, q2, r0, m7), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 7)
+Log: Received PUBCOMP (Mid: 15)
+publish: 15
+Log: Received PUBREL (Mid: 7)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 7)
+Log: Received PUBLISH (d0, q2, r0, m8), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 8)
+Log: Received PUBCOMP (Mid: 16)
+publish: 16
+Log: Received PUBLISH (d0, q2, r0, m9), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 9)
+Log: Received PUBCOMP (Mid: 17)
+publish: 17
+Log: Received PUBREL (Mid: 8)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 8)
+Log: Received PUBREL (Mid: 9)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 9)
+Sending Temperature  measurement: 211,24.984375
+Log: Sending PUBLISH (d0, q2, r0, m18), 'b's/us'', ... (13 bytes)
+Sending Humidity  measurement: 992,,45.375
+Log: Sending PUBLISH (d0, q2, r0, m19), 'b's/uc/pi'', ... (11 bytes)
+Sending Pressure  measurement: 994,,1013.01416015625
+Log: Sending PUBLISH (d0, q2, r0, m20), 'b's/uc/pi'', ... (21 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m21), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 18)
+Log: Sending PUBREL (Mid: 18)
+Log: Received PUBREC (Mid: 19)
+Log: Sending PUBREL (Mid: 19)
+Log: Received PUBREC (Mid: 20)
+Log: Sending PUBREL (Mid: 20)
+Log: Received PUBREC (Mid: 21)
+Log: Sending PUBREL (Mid: 21)
+Log: Received PUBCOMP (Mid: 18)
+publish: 18
+Log: Received PUBLISH (d0, q2, r0, m10), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 10)
+Log: Received PUBCOMP (Mid: 19)
+publish: 19
+Log: Received PUBLISH (d0, q2, r0, m11), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 11)
+Log: Received PUBCOMP (Mid: 20)
+publish: 20
+Log: Received PUBLISH (d0, q2, r0, m12), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 12)
+Log: Received PUBCOMP (Mid: 21)
+publish: 21
+Log: Received PUBREL (Mid: 10)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 10)
+Log: Received PUBREL (Mid: 11)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 11)
+Log: Received PUBREL (Mid: 12)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 12)
+Sending Temperature  measurement: 211,24.953125
+Log: Sending PUBLISH (d0, q2, r0, m22), 'b's/us'', ... (13 bytes)
+Sending Humidity  measurement: 992,,44.78125
+Log: Sending PUBLISH (d0, q2, r0, m23), 'b's/uc/pi'', ... (13 bytes)
+Sending Pressure  measurement: 994,,1012.9951171875
+Log: Sending PUBLISH (d0, q2, r0, m24), 'b's/uc/pi'', ... (20 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m25), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 22)
+Log: Sending PUBREL (Mid: 22)
+Log: Received PUBREC (Mid: 23)
+Log: Sending PUBREL (Mid: 23)
+Log: Received PUBREC (Mid: 24)
+Log: Sending PUBREL (Mid: 24)
+Log: Received PUBREC (Mid: 25)
+Log: Sending PUBREL (Mid: 25)
+Log: Received PUBCOMP (Mid: 22)
+publish: 22
+Log: Received PUBLISH (d0, q2, r0, m13), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 13)
+Log: Received PUBCOMP (Mid: 23)
+publish: 23
+Log: Received PUBLISH (d0, q2, r0, m14), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 14)
+Log: Received PUBCOMP (Mid: 24)
+publish: 24
+Log: Received PUBLISH (d0, q2, r0, m15), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 15)
+Log: Received PUBCOMP (Mid: 25)
+publish: 25
+Log: Received PUBREL (Mid: 13)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 13)
+Log: Received PUBREL (Mid: 14)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 14)
+Log: Received PUBREL (Mid: 15)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 15)
+Sending Temperature  measurement: 211,25.03125
+Log: Sending PUBLISH (d0, q2, r0, m26), 'b's/us'', ... (12 bytes)
+Sending Humidity  measurement: 992,,44.796875
+Log: Sending PUBLISH (d0, q2, r0, m27), 'b's/uc/pi'', ... (14 bytes)
+Sending Pressure  measurement: 994,,1013.0126953125
+Log: Sending PUBLISH (d0, q2, r0, m28), 'b's/uc/pi'', ... (20 bytes)
+Sending Gyroscope measurement: 993,,0.0,0.0,0.0
+Log: Sending PUBLISH (d0, q2, r0, m29), 'b's/uc/pi'', ... (16 bytes)
+Log: Received PUBREC (Mid: 26)
+Log: Sending PUBREL (Mid: 26)
+Log: Received PUBREC (Mid: 27)
+Log: Sending PUBREL (Mid: 27)
+Log: Received PUBREC (Mid: 28)
+Log: Sending PUBREL (Mid: 28)
+Log: Received PUBREC (Mid: 29)
+Log: Sending PUBREL (Mid: 29)
+Log: Received PUBCOMP (Mid: 26)
+publish: 26
+Log: Received PUBLISH (d0, q2, r0, m16), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 16)
+Log: Received PUBCOMP (Mid: 27)
+publish: 27
+Log: Received PUBLISH (d0, q2, r0, m17), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 17)
+Log: Received PUBCOMP (Mid: 28)
+publish: 28
+Log: Received PUBLISH (d0, q2, r0, m18), 's/e', ...  (56 bytes)
+Log: Sending PUBREC (Mid: 18)
+Log: Received PUBCOMP (Mid: 29)
+publish: 29
+Log: Received PUBREL (Mid: 16)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 16)
+Log: Received PUBREL (Mid: 17)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 17)
+Log: Received PUBREL (Mid: 18)
+Message Received: s/e 2 41,,Template collection for this identifier not existing
+Log: Sending PUBCOMP (Mid: 18)
